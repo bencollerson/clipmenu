@@ -2,9 +2,11 @@
 Description=Clipmenu daemon
 
 [Service]
-ExecStart=/usr/bin/clipmenud
+ExecStart=/usr/local/bin/clipmenud
 Restart=always
 RestartSec=500ms
+
+Environment="CM_IGNORE_WINDOW=KeePassXC"
 
 MemoryDenyWriteExecute=yes
 NoNewPrivileges=yes

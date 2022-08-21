@@ -1,3 +1,11 @@
+setup
+
+systemctl --user import-environment DISPLAY
+systemctl --user daemon-reload
+systemctl --user enable clipmenud
+systemctl --user start clipmenud
+
+
 [![Tests](https://img.shields.io/travis/cdown/clipmenu/develop.svg)](https://travis-ci.org/cdown/clipmenu)
 
 clipmenu is a simple clipboard manager using [dmenu][] (or [rofi][] with
